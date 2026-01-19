@@ -5,36 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../../css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"></script>
-    <script src="../js/translations.js" defer></script>
-    <script src="../js/loading.js" defer></script>
+    <script src="../../js/translations.js" defer></script>
+    <script src="../../js/loading.js" defer></script>
 </head>
 
 <body>
 <div id="loadingOverlay" class="loading-overlay">
     <div class="loading-container">
-        <!-- Option 1: Spinner classique -->
+
         <div class="loading-spinner"></div>
 
-        <!-- Option 2: Points qui rebondissent (commenté) -->
-        <!--
-        <div class="loading-dots">
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-        </div>
-        -->
 
-        <!-- Option 3: Barre de progression (commenté) -->
-        <!--
-        <div class="loading-bar-container">
-            <div class="loading-bar"></div>
-        </div>
-        -->
-
-        <div class="loading-text">Chargement...</div>
+        <div data-translate="loading-text" class="loading-text"></div>
     </div>
 </div>
 <div class="language-selector">
@@ -42,28 +27,27 @@
     <button class="lang-btn" onclick="changeLanguage('en')">EN</button>
 </div>
 <nav>
-    <a href="../index.html" data-translate="nav-home"></a>
-    <a href="infos.html" data-translate="nav-about"></a>
-    <a href="../index.html#projets" data-translate="nav-projects"></a>
-    <a href="contact.html" data-translate="nav-contact"></a>
+    <a href="../../index.html" data-translate="nav-home"></a>
+    <a href="../infos.html" data-translate="nav-about"></a>
+    <a href="../../index.html#projets" data-translate="nav-projects"></a>
+    <a href="../contact.html" data-translate="nav-contact"></a>
 </nav>
 <!-- Contenu de la page -->
 <section class="project">
-    <h2 data-translate="twig-title"></h2>
+    <h2 data-translate="symfony-title"></h2>
     <div class="about-content">
         <div class="about-text">
-            <p data-translate="twig-text1"></p><br>
-            <p data-translate="twig-text2"></p><br>
-            <p data-translate="twig-text3"></p>
+            <p data-translate="symfony-text1"></p><br>
+            <p data-translate="symfony-text2"></p>
         </div>
         <div class="skills-asked">
             <h2 data-translate="project-skills"></h2>
             <div class="competences-list">
                 <div class="competence-item">
                     <div class="competence-icon">
-                        <i class="fas fa-leaf"></i>
+                        <i class="fab fa-symfony"></i>
                     </div>
-                    <div class="competence-text">Twig</div>
+                    <div class="competence-text">Symfony</div>
                 </div>
 
                 <div class="competence-item">
@@ -71,6 +55,13 @@
                         <i class="fab fa-php"></i>
                     </div>
                     <div class="competence-text">PHP</div>
+                </div>
+
+                <div class="competence-item">
+                    <div class="competence-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <div class="competence-text">Twig</div>
                 </div>
 
                 <div class="competence-item">
@@ -104,14 +95,8 @@
             </div>
         </div>
         <div class="projet-item">
-            <a href="../ressources/tricountAccueil.png">
-                <img src="../ressources/tricountAccueil.png" alt="Accueil de site">
-            </a>
-            <a href="../ressources/tricountInscrire.png">
-                <img src="../ressources/tricountInscrire.png" alt="Système d'inscription">
-            </a>
-            <a href="../ressources/tricountEvent.png">
-                <img src="../ressources/tricountEvent.png" alt="Evenement Tricount">
+            <a href="../../ressources/projets/myAvatar.png">
+                <img src="../../ressources/projets/myAvatar.png" alt="Page principale du projet MyAvatar">
             </a>
         </div>
 
@@ -127,10 +112,10 @@
         <div class="footer-section">
             <h3>Navigation</h3>
             <ul class="footer-links">
-                <li><a href="../index.html" data-translate="nav-home"></a></li>
-                <li><a href="infos.html" data-translate="nav-about"></a></li>
-                <li><a href="../index.html#projets" data-translate="nav-projects"></a></li>
-                <li><a href="contact.html" data-translate="nav-contact"></a></li>
+                <li><a href="../../index.html" data-translate="nav-home"></a></li>
+                <li><a href="../infos.html" data-translate="nav-about"></a></li>
+                <li><a href="../../index.html#projets" data-translate="nav-projects"></a></li>
+                <li><a href="../contact.html" data-translate="nav-contact"></a></li>
             </ul>
         </div>
     </div>

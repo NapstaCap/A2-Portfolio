@@ -14,26 +14,11 @@
 <body>
 <div id="loadingOverlay" class="loading-overlay">
     <div class="loading-container">
-        <!-- Option 1: Spinner classique -->
+
         <div class="loading-spinner"></div>
 
-        <!-- Option 2: Points qui rebondissent (commenté) -->
-        <!--
-        <div class="loading-dots">
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-        </div>
-        -->
 
-        <!-- Option 3: Barre de progression (commenté) -->
-        <!--
-        <div class="loading-bar-container">
-            <div class="loading-bar"></div>
-        </div>
-        -->
-
-        <div class="loading-text">Chargement...</div>
+        <div data-translate="loading-text" class="loading-text"></div>
     </div>
 </div>
     <div class="language-selector">
@@ -58,24 +43,33 @@
     <section id="projets" class="projects">
         <h2 data-translate="projects-title"></h2>
         <div class="project-buttons">
-            <a href="vues/projet-java.html" class="btn" data-translate="btn-java"></a>
-            <a href="vues/projet-php.html" class="btn" data-translate="btn-php"></a>
-            <a href="vues/projet-ndi.html" class="btn" data-translate="btn-ndi"></a>
-            <a href="vues/projet-twig.html" class="btn" data-translate="btn-twig"></a>
-            <a href="vues/stage-ecosm.html" class="btn" data-translate="btn-stage-ecosm"></a>
+            <a href="vues/projets/projet-java.html" class="btn" data-translate="btn-java"></a>
+            <a href="vues/projets/projet-vue.html" class="btn" data-translate="btn-vue"></a>
+            <a href="vues/projets/projet-godot.html" class="btn" data-translate="btn-godot"></a>
+            <a href="vues/projets/projet-symfony.html" class="btn" data-translate="btn-symfony"></a>
+            <a href="vues/projets/stage-ecosm.html" class="btn" data-translate="btn-stage-ecosm"></a>
         </div>
     </section>
 
     <section id="apprentissage" class="projects">
         <h2 data-translate="apprentissage-title"></h2>
         <div class="project-buttons">
-            <a href="vues/apprentissage.html" class="btn" data-translate="btn-apprentissage2"></a>
+            <a href="vues/apprentissage2/apprentissage2.html" class="btn" data-translate="btn-apprentissage2"></a>
+            <!--<a href="vues/apprentissage3/apprentissage3.html" class="btn" data-translate="btn-apprentissage3"></a>-->
         </div>
     </section>
 
     <section id="formations" class="formations">
         <h2 data-translate="timeline-title"></h2>
         <section class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <div class="timeline-date">2024-2025</div>
+                    <div class="timeline-title" data-translate="timeline-but3"></div>
+                    <div class="timeline-subtitle" data-translate="timeline-iut"></div>
+                </div>
+            </div>
+
             <div class="timeline-item">
                 <div class="timeline-content">
                     <div class="timeline-date">2024-2025</div>

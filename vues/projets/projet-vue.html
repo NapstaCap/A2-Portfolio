@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"></script>
+    <script src="../../js/translations.js" defer></script>
+    <script src="../../js/loading.js" defer></script>
+</head>
+
+<body>
+<div id="loadingOverlay" class="loading-overlay">
+    <div class="loading-container">
+
+        <div class="loading-spinner"></div>
+
+
+        <div data-translate="loading-text" class="loading-text"></div>
+    </div>
+</div>
+<div class="language-selector">
+    <button class="lang-btn" onclick="changeLanguage('fr')">FR</button>
+    <button class="lang-btn" onclick="changeLanguage('en')">EN</button>
+</div>
+<nav>
+    <a href="../../index.html" data-translate="nav-home"></a>
+    <a href="../infos.html" data-translate="nav-about"></a>
+    <a href="../../index.html#projets" data-translate="nav-projects"></a>
+    <a href="../contact.html" data-translate="nav-contact"></a>
+</nav>
+<!-- Contenu de la page -->
+<section class="project">
+    <h2 data-translate="vue-title"></h2>
+    <div class="about-content">
+        <div class="about-text">
+            <p data-translate="vue-text1"></p><br>
+            <p data-translate="vue-text2"></p><br>
+            <p data-translate="vue-text3"></p>
+        </div>
+        <div class="skills-asked">
+            <h2 data-translate="project-skills"></h2>
+            <div class="competences-list">
+                <div class="competence-item">
+                    <div class="competence-icon">
+                        <i class="fab fa-php"></i>
+                    </div>
+                    <div class="competence-text">Symfony</div>
+                </div>
+
+                <div class="competence-item">
+                    <div class="competence-icon">
+                        <i class="fa-brands fa-vuejs"></i>
+                    </div>
+                    <div class="competence-text">Vue.js</div>
+                </div>
+
+                <div class="competence-item">
+                    <div class="competence-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <div class="competence-text">MySQL</div>
+                </div>
+
+                <div class="competence-item">
+                    <div class="competence-icon">
+                        <i class="fab fa-docker"></i>
+                    </div>
+                    <div class="competence-text">Docker</div>
+                </div>
+
+                <div class="competence-item">
+                    <div class="competence-icon">
+                        <i class="fab fa-git-alt"></i>
+                    </div>
+                    <div class="competence-text">Git</div>
+                </div>
+
+                <div class="competence-item">
+                    <div class="competence-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="competence-text" data-translate="project-group"></div>
+                </div>
+            </div>
+        </div>
+        <div class="projet-item">
+            <a href="../../ressources/projets/critiquePage1.png">
+                <img src="../../ressources/projets/critiquePage1.png" alt="Page principale">
+            </a>
+            <a href="../../ressources/projets/critiquePage2.png">
+                <img src="../../ressources/projets/critiquePage2.png" alt="Page d'un album">
+            </a>
+            <a href="../../ressources/projets/critiquePage2.png">
+                <img src="../../ressources/projets/critiquePage3.png" alt="Page de l'API">
+            </a>
+        </div>
+    </div>
+
+</section>
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-section">
+            <h3 data-translate="nav-about"></h3>
+            <p data-translate="footer-text"></p>
+        </div>
+
+        <div class="footer-section">
+            <h3>Navigation</h3>
+            <ul class="footer-links">
+                <li><a href="../../index.html" data-translate="nav-home"></a></li>
+                <li><a href="../infos.html" data-translate="nav-about"></a></li>
+                <li><a href="../../index.html#projets" data-translate="nav-projects"></a></li>
+                <li><a href="../contact.html" data-translate="nav-contact"></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p data-translate="footer-rights"></p>
+    </div>
+</footer>
+</body>
+
+</html>

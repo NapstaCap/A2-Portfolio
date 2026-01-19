@@ -1,5 +1,6 @@
 const translations = {
     fr: {
+        'loading-text': 'Chargement...',
         /*
         ------------- Navigation ---------------------
          */
@@ -16,12 +17,13 @@ const translations = {
         'hero-subtitle': 'Étudiant en BUT Informatique',
         'projects-title': 'Mes Projets',
         'btn-java': 'Projet Java',
-        'btn-php': 'Projet PHP',
-        'btn-ndi': 'Projet NDI',
-        'btn-twig': 'Projet Twig',
+        'btn-vue': 'Projet Vue',
+        'btn-godot': 'Projet Godot',
+        'btn-symfony': 'Projet Symfony',
         'btn-stage-ecosm' : 'Stage chez ECOSM',
         'apprentissage-title': `Mon Portfolio d'Apprentissage`,
         'btn-apprentissage2': 'Deuxième année',
+        'btn-apprentissage3': 'Troisième année',
 
         /*
         ------------- Page contact ---------------------
@@ -38,7 +40,7 @@ const translations = {
 
         'about-title': 'À propos de moi',
         'skills-title': 'Mes Compétences',
-        'about-text1': `Je m'appelle Dorian BARNIER, étudiant en deuxième année de BUT Informatique à 
+        'about-text1': `Je m'appelle Dorian BARNIER, étudiant en troisième année de BUT Informatique à 
         l’IUT Montpellier-Sète, dans la filière Réalisation d'Applications : Conception, Développement et Validation (RACDV).`,
         'about-text2': `Passionné par l’univers des jeux vidéo, je m’intéresse tout particulièrement aux jeux 
         indépendants, souvent créés avec passion et sincérité, ce qui donne naissance à de véritables chefs-d’œuvre. 
@@ -61,6 +63,7 @@ const translations = {
         'timeline-bac': 'BAC STI2D',
         'timeline-but1': 'BUT Informatique - 1ère année',
         'timeline-but2': 'BUT Informatique - 2ème année',
+        'timeline-but3': 'BUT Informatique - 3ème année',
         'timeline-lycee': 'Lycée Jean Lurçat à Martigues',
         'timeline-iut': 'IUT Montpellier-Sète',
 
@@ -68,7 +71,7 @@ const translations = {
         ------------- Footer ---------------------
          */
 
-        'footer-text': `Étudiant en deuxième année de BUT Informatique à l'IUT Montpellier-Sète`,
+        'footer-text': `Étudiant en troisième année de BUT Informatique à l'IUT Montpellier-Sète`,
         'footer-rights': '© 2025 Dorian BARNIER. Tous droits réservés.',
 
         /*
@@ -79,28 +82,21 @@ const translations = {
         'project-group': `Travail en groupe`,
         'project-agile': `Méthodes agiles`,
         'project-duo': `Travail en binôme`,
+        'project-solo': `Travail seul`,
+        'photo-editor': `Editeur photo (Photopea)`,
 
         /*
-        ------------- Projet php ---------------------
+        ------------- Projet vue ---------------------
          */
 
-        'php-title': `Projet Php - Site d'avis de poursuite d'étude`,
-        'php-text1': `Dans un contexte où les parcours académiques deviennent de plus en plus diversifiés et compétitifs, 
-        les établissements d'enseignement supérieur sont confrontés à devoir évaluer efficacement le candidatures des étudiants 
-        en vue de leur admission ou de leur poursuite d'études.`,
-        'php-text2': `Les processus d’évaluation actuels sont souvent peu ergonomiques, manuels, et dispersés entre
-                    différents
-                    outils, ce qui peut engendrer une perte d’efficacité.`,
-        'php-text3': `Ce projet vise à répondre à ce besoin en proposant une plateforme numérique sous forme de site web
-                    dédiée aux universités ainsi qu’au responsable de poursuite d’études du département Informatique de
-                    l’IUT Montpellier-Sète. Celle-ci permet aux jurys d’évaluation d’exprimer leur avis sur la
-                    candidature
-                    de chaque élève en utilisant des mentions telles que très favorable, favorable ou réservé ainsi
-                    qu’un commentaire.`,
-        'php-text4': `L'objectif principal de ce projet était à la fois d'appliquer l'apprentissage des méthodes agiles
-                    dans
-                    un projet, mais aussi d'utiliser l'apprentissage du langage Php et l'utilisation de phpMyAdmin`,
-        'php-report': `Rapport de projet`,
+        'vue-title': `Projet Vue - Site de critiques musiques`,
+        'vue-text1': `Lors de ma troisième année de BUT Informatique, nous avons appris à utiliser le framework Vue.js pour le développement front-end, 
+        ainsi que Symfony pour créer une API Platform. Le but de ce projet était donc de mettre en oeuvre nos connaissances acquises via un site de critiques de notre choix.`,
+        'vue-text2': `Dans le cadre de ce projet, nous avons développé un site web de critiques musicales, 
+        permettant aux utilisateurs de consulter et de publier des critiques sur divers albums et musiques.
+        Il est aussi possible de publier un album ou une musique directement via le site.`,
+        'vue-text3': `Ce projet m'a permis de renforcer mes compétences en développement web, 
+        en particulier dans l'utilisation de frameworks modernes tels que Vue.js et Symfony.`,
 
         /*
         ------------- Projet java ---------------------
@@ -122,13 +118,18 @@ const translations = {
                     précédemment.`,
 
         /*
-        ------------- Projet NDI ---------------------
+        ------------- Projet Godot ---------------------
          */
 
-        'ndi-title': `Projet NDI - Site web sur l'eau et l'environnement`,
-        'ndi-text': `Lors d'un évènement nommé "La nuit de l'info" nous avons du réaliser en groupe un site web dans la nuit sur le
-                    thème de l'eau et l'environnement.`,
-        'ndi-website': `Le site web`,
+        'godot-title': `Projet Godot - Jeu vidéo`,
+        'godot-text': `Projet personnel ou mon objectif était d'apprendre petit à petit comment utiliser le moteur Godot.`,
+        'godot-text2': `Un des principaux projets que j'ai réalisé était de reproduire le menu et un combat de mon jeu préféré, "OMORI".`,
+        'godot-text3': `Pour cela, j'ai utilisé une banque à sprites, sur laquelle se trouvait les sprites du jeu, 
+        puis j'ai réalisé les scenes/scripts afin de retrouver un résultat ressemblant. Tout en essayant de 
+        garder les bonnes manières de développement que j'ai appris en étude.`,
+        'godot-text4': `Bien que ce projet ne soit pas fini, je suis très fier de ce que j'ai déjà réussi à réaliser et 
+        je n'hésiterais pas à le continuer lorsque je pourrais.`,
+        'godot-video': 'Présentation vidéo',
 
         /*
         ------------- Apprentissage ---------------------
@@ -218,18 +219,18 @@ const translations = {
         'skill3-text4': `Je n'ai pas de projets sur ce portfolio pour illustrer cette compétence. `,
 
         /*
-        ------------- Projet Twig ---------------------
+        ------------- Projet Symfony ---------------------
          */
 
-        'twig-title': `Projet Twig - Réécriture d'une application web complexe`,
-        'twig-text1': `Lors du deuxième semestre de ma deuxième année de BUT Informatique à l'IUT Montpellier-Sète, 
-        il nous a été donné en guise de SAE, une application web totalement décousue, mal développée et mal organisée.`,
-        'twig-text2': `L'objectif était donc de réécrire cette application web en appliquant les notions apprisent 
-        lors des TD, allant de la conception de routeur, mis en place de services, appels de vues Twig, appels API etc.`,
-        'twig-text3': `Cette SAE est encore en cours de réalisation.`,
+        'symfony-title': `Projet Symfony - MyAvatar`,
+        'symfony-text1': `Lors du premier semestre de ma troisième année de BUT Informatique à l'IUT Montpellier-Sète, 
+        il nous a été donné en guise de SAE, la reproduction d'une application web complexe déjà existante nommée "Gravatar".`,
+        'symfony-text2': `L'objectif était donc de réaliser une application web, tournant autour de la photo de profil d'un utilisateur en l'associant à son adresse email,
+        comme le ferait le site web "Gravatar". Cela à pour but de pouvoir réaliser une simple requête au site pour récuperer la photo de profil correspondante.`,
 
     },
     en: {
+        'loading-text': 'Loading...',
         /*
         ------------- Navigation ---------------------
          */
@@ -246,12 +247,13 @@ const translations = {
         'hero-subtitle': 'Student in Computer Science BUT',
         'projects-title': 'My Projects',
         'btn-java': 'Java Project',
-        'btn-php': 'Php Project',
-        'btn-ndi': 'NDI Project',
-        'btn-twig': 'Twig Project',
+        'btn-vue': 'Vue Project',
+        'btn-godot': 'Godot Project',
+        'btn-symfony': 'Symfony Project',
         'btn-stage-ecosm' : 'Internship at ECOSM',
         'apprentissage-title': `My Learning Portfolio`,
         'btn-apprentissage2': 'Second year',
+        'btn-apprentissage3': 'Third year',
 
         /*
         ------------- Page contact ---------------------
@@ -268,7 +270,7 @@ const translations = {
 
         'about-title': 'About Me',
         'skills-title': 'My Skills',
-        'about-text1': `My name is Dorian BARNIER, a second-year student at IUT Montpellier-Sète’s BUT Computer Science 
+        'about-text1': `My name is Dorian BARNIER, a third-year student at IUT Montpellier-Sète’s BUT Computer Science 
         department, in the Application Design, Development and Validation (RACDV) sector.`,
         'about-text2': `Passionate about the world of video games, I am particularly interested in independent games, 
         often created with passion and sincerity, which gives rise to real masterpieces. I also have a great musical 
@@ -291,6 +293,7 @@ const translations = {
         'timeline-bac': 'STI2D High School Diploma',
         'timeline-but1': 'Computer Science BUT - 1st year',
         'timeline-but2': 'Computer Science BUT - 2nd year',
+        'timeline-but3': 'Computer Science BUT - 3rd year',
         'timeline-lycee': 'Jean Lurçat High School in Martigues',
         'timeline-iut': 'IUT Montpellier-Sète',
 
@@ -298,7 +301,7 @@ const translations = {
         ------------- Footer ---------------------
          */
 
-        'footer-text': `Second year student of Computer Science BUT at the IUT Montpellier-Sète`,
+        'footer-text': `Third year student of Computer Science BUT at the IUT Montpellier-Sète`,
         'footer-rights': '© 2025 Dorian BARNIER. All rights reserved.',
 
         /*
@@ -309,28 +312,21 @@ const translations = {
         'project-group': `Group work`,
         'project-agile': `Agile methods`,
         'project-duo': `Work in pairs`,
+        'project-solo': `Work alone`,
+        'photo-editor': `Photo editor (Photopea)`,
 
         /*
-        ------------- Projet Php ---------------------
+        ------------- Projet Vue ---------------------
          */
 
-        'php-title': `Php Project - Continuing Study Notice Website`,
-        'php-text1': `In a context where academic careers are becoming increasingly diverse and competitive, 
-        higher education institutions are faced with the need to effectively assess student applications 
-        for admission or further study.`,
-        'php-text2': `Current assessment processes are often unergonomic, manual and dispersed between
-                    different
-                    tools, which can lead to a loss of efficiency.`,
-        'php-text3': `This project aims to meet this need by offering a digital platform in the form of a website
-                    dedicated to universities and the Head of Continuing Studies in the IT Department of
-                    the IUT Montpellier-Sète. This allows the evaluation juries to express their opinion on the
-                    application
-                    of each student using terms such as very favorable, favorable or reserved as well
-                    just a comment.`,
-        'php-text4': `The main objective of this project was both to apply agile learning methods
-                    in
-                    a project, but also to use learning the Php language and using phpMyAdmin`,
-        'php-report': `Project report`,
+        'vue-title': `Vue Project - Music Review Website`,
+        'vue-text1': `During my third year of BUT Computer Science, we learned to use the Vue.js framework for front-end development,
+        as well as Symfony to create an API Platform. The goal of this project was therefore to implement our acquired knowledge via a review site of our choice.`,
+        'vue-text2': `As part of this project, we developed a music review website,
+        allowing users to consult and publish reviews on various albums and music.
+        It is also possible to publish an album or music directly via the website.`,
+        'vue-text3': `This project allowed me to strengthen my web development skills,
+        particularly in the use of modern frameworks such as Vue.js and Symfony.`,
 
         /*
         ------------- Projet Java ---------------------
@@ -352,13 +348,18 @@ const translations = {
                     previously.`,
 
         /*
-        ------------- Projet NDI ---------------------
+        ------------- Projet Godot ---------------------
          */
 
-        'ndi-title': `NDI Project - Water and environment website`,
-        'ndi-text': `During an event called "The night of the info" we had to realize a website in the night on the
-                    water and the environment.`,
-        'ndi-website': `The website`,
+        'godot-title': `Godot Project - Video Game`,
+        'godot-text': `Personal project where my goal was to learn little by little how to use the Godot engine.`,
+        'godot-text2': `One of the main projects I carried out was to reproduce the menu and a fight from my favorite game, "OMORI".`,
+        'godot-text3': `To do this, I used a sprite bank, which contained the game's sprites,
+        then I created the scenes/scripts to achieve a similar result. While trying to
+        maintain the good development practices that I learned in my studies.`,
+        'godot-text4': `Although this project is not finished, I am very proud of what I have already managed to achieve and
+        I will not hesitate to continue it when I can.`,
+        'godot-video': 'Video presentation',
 
         /*
         ------------- Apprentissage ---------------------
@@ -446,15 +447,14 @@ const translations = {
         I learned in the first year to install a Linux machine, then in the second year a two virtual machines Windows and Linux.`,
 
         /*
-        ------------- Projet Twig ---------------------
+        ------------- Projet Symfony ---------------------
          */
 
-        'twig-title': `Twig project - Rewriting a complex web application`,
-        'twig-text1': `During the second semester of my second year of BUT Informatique at the IUT Montpellier-Sète, 
-        we were given as SAE, a totally disjointed web application, poorly developed and poorly organized.`,
-        'twig-text2': `The objective was therefore to rewrite this web application by applying the concepts learned 
-        during the TD, ranging from router design, set-up services, Twig views calls, API calls etc.`,
-        'twig-text3': `This SAE is still under construction.`,
+        'symfony-title': `Symfony Project - MyAvatar`,
+        'symfony-text1': `During the first semester of my third year of BUT Computer Science at IUT Montpellier-Sète,
+        we were given as a SAE, the reproduction of a complex web application already existing called "Gravatar".`,
+        'symfony-text2': `The objective was therefore to create a web application, revolving around the profile picture of a user by associating it with his email address,
+        like the website "Gravatar" would do. This is to be able to make a simple request to the site to retrieve the corresponding profile picture.`,
     }
 };
 
