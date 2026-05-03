@@ -21,6 +21,7 @@ const translations = {
         'btn-godot': 'Projet Godot',
         'btn-symfony': 'Projet Symfony',
         'btn-stage-ecosm' : 'Stage chez ECOSM',
+        'btn-docker': `Projet DockerIUT`,
         'apprentissage-title': `Mon Portfolio d'Apprentissage`,
         'btn-apprentissage2': 'Deuxième année',
         'btn-apprentissage3': 'Troisième année',
@@ -132,18 +133,41 @@ const translations = {
         'godot-video': 'Présentation vidéo',
 
         /*
+        ------------- Projet Docker ---------------------
+         */
+
+        'docker-title': `Projet DockerIUT - Docker à l'IUT, mais plus facile`,
+        'docker-text1': `SAE du premier semestre de troisième année de BUT Informatique, de loin le projet le plus complet que j'ai pu réaliser à l'IUT.`,
+        'docker-text2': `Celui-ci consiste en une application web capable d'aider les étudiants dans l'utilisation de Docker, notamment lors de son utilisation au sein
+        d'une matière de l'IUT, "Virtualisation", dans laquelle nous avions des TP sur Docker, comment ça fonctionne et comment l'utiliser.
+         Cette matière étant plutôt complexe, nous avons décidé, en groupe de 6, de réaliser un moyen de faciliter son accès en tant que SAE, cela était dans l'intérêt des étudiants mais aussi des professeurs.`,
+        'docker-text3': `Cette application est réalisée avec les frameworks Symfony et Bootstrap, conteneurisée avec Docker et hébergée grâce au serveur de l'IUT.
+        Nous avons également utilisé un serveur Proxmox, celui-ci nous permettais de faire tourner une machine virtuelle pour chaque utilisateur se connectant permettant une totale isolation des DockerEngine.
+        Grâce à cela, les étudiants pouvaient réaliser leur TD directement via l'application sans problème de conflit DockerEngine.`,
+        'docker-text4': `Un système de fichiers interne permet de stocker les fichiers des étudiants, ce système de fichier pouvant être directement relié à un dépôt Git, cela permettait d'introduire du versionning dans les projets des étudiants, mais aussi de pouvoir faire du suivi de projet plus facilement pour les professeurs.
+        Un système de groupes et de partage de fichiers est également présent, permettant aux professeurs de regrouper les informations par groupes et de partager les éléments essentiels des TD.`,
+        'docker-text5': `Ce projet a été pour moi une expérience très enrichissante, j'ai pu apprendre énormément de choses, notamment sur Proxmox et son utilisation.`,
+        'docker-git': 'Dépôt GitHub',
+
+        /*
         ------------- Apprentissage ---------------------
          */
 
+        'skill1': 'Compétence 1',
+        'skill2': 'Compétence 2',
         'skill3': 'Compétence 3',
         'skill4': 'Compétence 4',
         'skill5': 'Compétence 5',
+        'skill6': 'Compétence 6',
         'niv1skill3': 'Niveau 1 : Installer et configurer un poste de travail',
         'niv2skill3': 'Niveau 2 : Déployer des services dans une architecture réseau',
         'niv1skill4': `Niveau 1 : Concevoir et mettre en place une base de données à partir d'un cahier des charges client`,
         'niv2skill4': 'Niveau 2 : Optimiser une base de données, intéragir avec une application et mettre en oeuvre la sécurité',
         'niv1skill5': 'Niveau 1 : Identifier les besoins métiers des clients et des utilisateurs',
         'niv2skill5': 'Niveau 2 : Appliquer une démarche de suivi de projet en fonction des besoins métiers des clients et des utilisateurs',
+        'niv3skill1': 'Niveau 3 : Adapter des applications sur un ensemble de supports (embarqué, web, mobile, IoT...)',
+        'niv3skill2': 'Niveau 3 : Analyser et optimiser des applications',
+        'niv3skill6': 'Niveau 3 : Manager une équipe informatique',
         'apprentissage-skill1': `Compétence 1 : Réaliser un développement d'application`,
         'apprentissage-skill2': `Compétence 2 : Optimisation des applications`,
         'apprentissage-skill3': `Compétence 3 : Administrer des systèmes informatiques communicants complexes`,
@@ -154,6 +178,14 @@ const translations = {
         /*
         ------------- Compétences ---------------------
          */
+
+        'skill1-ac1lv3': `AC 31.01: Choisir et implémenter les architectures adaptées`,
+        'skill1-ac2lv3': `AC 31.02: Faire évoluer une application existante`,
+        'skill1-ac3lv3': `AC 31.03: Intégrer des solutions dans un environnement de production`,
+
+        'skill2-ac1lv3': `AC 32.01: Anticiper les résultats de diverses métriques (temps d’exécution, occupation mémoire, montée en charge...)`,
+        'skill2-ac2lv3': `AC 32.02: Profiler, analyser et justifier le comportement d’un code existant`,
+        'skill2-ac3lv3': `AC 32.03: Choisir et utiliser des bibliothèques et méthodes dédiées au domaine d'application (imagerie, immersion, intelligence artificielle, jeux vidéos, parallélisme, calcul formel...)`,
 
         // Compétence 3 lv1
         'skill3-ac1lv1': `AC 1: Identifier les différents composants (matériels et logiciels) d’un système numérique`,
@@ -188,6 +220,11 @@ const translations = {
         'skill5-ac3lv2': `AC 3: Identifier les critères de faisabilité d’un projet informatique`,
         'skill5-ac4lv2': `AC 4: Définir et mettre en œuvre une démarche de suivi de projet`,
 
+        'skill6-ac1lv3': `AC 36.01: Organiser et partager une veille technologique et informationnelle`,
+        'skill6-ac2lv3': `AC 36.02: Identifier les enjeux de l’économie de l’innovation numérique`,
+        'skill6-ac3lv3': `AC 36.03: Guider la conduite du changement informatique au sein d’une organisation`,
+        'skill6-ac4lv3': `AC 36.04: Accompagner le management de projet informatique`,
+
         /*
         ------------- Stage ECOSM ---------------------
          */
@@ -217,6 +254,23 @@ const translations = {
         'skill3-text3': `Je n'ai pas de projets sur ce portfolio pour illustrer cette compétence, 
         j'ai appris en debut de première année à installer un poste Linux, puis en deuxième année un deux machines virtuelles Windows et Linux.`,
         'skill3-text4': `Je n'ai pas de projets sur ce portfolio pour illustrer cette compétence. `,
+        'skill1-text1': `Je n'ai pas encore eu l'occasion d'intégrer moi-même des solutions dans un environnement de production,
+         néanmoins j'ai pu réaliser des projets qui ont pu être intégrés par la suite en production.
+          Je suis actuellement en stage, et j'espère pouvoir avoir l'occasion d'acquérir cette compétence.`,
+        'skill2-text1': `Je n'ai pas de projets sur ce portfolio pour illustrer cette compétence, car j'ai dû le retirer afin faire de la place pour d'autres projets.
+        Il nous a été donné en projet en tant que projet universitaire, une application complexe totalement décousue, que nous devions analyser et comprendre pour l'améliorer par la suite.
+        J'ai également pu mettre en pratique cette compétence lors de mon stage de deuxième année ainsi qu'actuellement en troisième année.`,
+        'skill2-text2': `J'ai pu mettre en pratique cette compétence dans quasiment tous mes projets de développement.
+        Mon stage chez ECOSM n'est qu'un exemple de trace dans lequel j'ai pu utiliser une bibliothèque. Lors de ce stage, j'ai pu utiliser la bibliothèque FFMPEG,
+        c'est une bibliothèque très connue, utilisée dans de très nombreuses applications comme par exemple, "OBS Studio". Celle-ci permet de manipuler des images, vidéos, ou encore de l'audio.
+        Elle m'a permis de récupérer tous les changements de plans d'une vidéo X, afin de pouvoir les stocker dans des fichiers binaires.`,
+        'skill6-text1': `Je n'ai pas de projets sur ce portfolio pour illustrer cette compétence, néanmoins j'ai pu participer à une veille informationnelle
+        à l'issue du cours de "PPP", nous devions réaliser des posts sur un forum concernant des sujets d'actualité liés à l'informatique.`,
+        'skill6-text2': `Je n'ai pas de projets sur ce portfolio pour illustrer cette compétence, néanmoins j'ai réalisé, au cours de ma troisième année de BUT Informatique, un séminaire
+        de création d'entreprise, dans lequel nous devions réaliser tout le nécessaire pour créer une entreprise à partir d'un produit que nous devions inventer.
+        Il était donc nécessaire d'identifier les enjeux de l'économie et de l'innovation numérique. Notre équipe a été classée cinquième parmi 19 équipes.`,
+        'skill6-text3': `Je n'ai pas de projets sur ce portfolio pour illustrer cette compétence mais je suis actuellement en stage, et j'ai la chance de pouvoir pratiquer cette compétence.
+        J'aide actuellement l'entreprise dans laquelle je travaille à changer et faire évoluer ses technologies.`,
 
         /*
         ------------- Projet Symfony ---------------------
@@ -251,6 +305,7 @@ const translations = {
         'btn-godot': 'Godot Project',
         'btn-symfony': 'Symfony Project',
         'btn-stage-ecosm' : 'Internship at ECOSM',
+        'btn-docker': `DockerIUT Project`,
         'apprentissage-title': `My Learning Portfolio`,
         'btn-apprentissage2': 'Second year',
         'btn-apprentissage3': 'Third year',
@@ -362,18 +417,41 @@ const translations = {
         'godot-video': 'Video presentation',
 
         /*
+        ------------- Projet Docker ---------------------
+         */
+
+        'docker-title': `DockerIUT Project - Docker at IUT, but easier`,
+        'docker-text1': `SAE of the first semester of the third year of BUT Computer Science, by far the most complete project I have been able to carry out at IUT.`,
+        'docker-text2': `It consists of a web application capable of helping students in the use of Docker, especially during its use within
+        a course of the IUT, "Virtualization", in which we had TPs on Docker, how it works and how to use it.
+        This course being rather complex, we decided, in a group of 6, to create a way to facilitate its access as a SAE, this was in the interest of students but also teachers.`,
+        'docker-text3': `This application is made with the Symfony and Bootstrap frameworks, containerized with Docker and hosted thanks to the IUT server.
+        We also used a Proxmox server, which allowed us to run a virtual machine for each connecting user allowing total isolation of the DockerEngine.
+        Thanks to this, students could do their TD directly via the application without any DockerEngine conflict.`,
+        'docker-text4': `An internal file system allows to store students' files, this file system can be directly linked to a Git repository, this allowed to introduce versioning in students' projects, but also to be able to do project tracking more easily for teachers.
+        A system of groups and file sharing is also present, allowing teachers to group information by groups and share the essential elements of the TDs.`,
+        'docker-text5': `This project was a very enriching experience for me, I was able to learn a lot of things, especially about Proxmox and its use.`,
+        'docker-git': 'GitHub repository',
+
+        /*
         ------------- Apprentissage ---------------------
          */
 
+        'skill1': 'Skill 1',
+        'skill2': 'Skill 2',
         'skill3': 'Skill 3',
         'skill4': 'Skill 4',
         'skill5': 'Skill 5',
+        'skill6': 'Skill 6',
         'niv1skill3': 'Level 1 : Install and configure a workstation',
         'niv2skill3': 'Level 2 : Deploy services in a network architecture',
         'niv1skill4': `Level 1 : Design and implement a database based on a client specification`,
         'niv2skill4': 'Level 2 : Optimize a database, interact with an application and implement security',
         'niv1skill5': 'Level 1 : Identify business needs of customers and users',
         'niv2skill5': 'Level 2 : Apply a project monitoring approach based on the business needs of clients and users',
+        'niv3skill1': 'Level 3 : Adapt applications on a set of supports (embedded, web, mobile, IoT...)',
+        'niv3skill2': 'Level 3 : Analyze and optimize applications',
+        'niv3skill6': 'Level 3 : Manage an IT team',
         'apprentissage-skill1': 'Skill 1 : Develop an application',
         'apprentissage-skill2': `Skill 2 : Optimizing Applications`,
         'apprentissage-skill3': `Skill 3 : Administer complex communicating computer systems`,
@@ -384,6 +462,14 @@ const translations = {
         /*
         ------------- Compétences ---------------------
          */
+
+        'skill1-ac1lv3': `AC 31.01: Choose and implement appropriate architectures`,
+        'skill1-ac2lv3': `AC 31.02: Evolve an existing application`,
+        'skill1-ac3lv3': `AC 31.03: Integrate solutions in a production environment`,
+
+        'skill2-ac1lv3': `AC 32.01: Anticipate the results of various metrics (execution time, memory usage, load increase...)`,
+        'skill2-ac2lv3': `AC 32.02: Profile, analyze and justify the behavior of existing code`,
+        'skill2-ac3lv3': `AC 32.03: Choose and use libraries and methods dedicated to the application domain (imaging, immersion, artificial intelligence, video games, parallelism, formal calculation...)`,
 
         // Compétence 3 lv1
         'skill3-ac1lv1': `AC 1: Identify the different components (hardware and software) of a digital system`,
@@ -418,6 +504,11 @@ const translations = {
         'skill5-ac3lv2': `AC 3: Identify the criteria for feasibility of an IT project`,
         'skill5-ac4lv2': `AC 4: Define and implement a project monitoring approach`,
 
+        'skill6-ac1lv3': `AC 36.01: Organize and share technological and informational monitoring`,
+        'skill6-ac2lv3': `AC 36.02: Identify the challenges of the digital innovation economy`,
+        'skill6-ac3lv3': `AC 36.03: Guide the conduct of IT change within an organization`,
+        'skill6-ac4lv3': `AC 36.04: Support IT project management`,
+
         /*
         ------------- Stage ECOSM ---------------------
          */
@@ -445,6 +536,23 @@ const translations = {
         'skill3-text2': `I don’t have projects on this portfolio to illustrate this skill, nevertheless I use GitLab and GitHub on all my projects.`,
         'skill3-text3': `I do not have projects on this portfolio to illustrate this skill, 
         I learned in the first year to install a Linux machine, then in the second year a two virtual machines Windows and Linux.`,
+        'skill1-text1': `I have not yet had the opportunity to integrate solutions myself in a production environment,
+            however I have been able to carry out projects that have been able to be integrated later in production.
+            I am currently in an internship, and I hope to have the opportunity to acquire this skill.`,
+        'skill2-text1': `I do not have projects on this portfolio to illustrate this skill, because I had to remove it to make room for other projects.
+        We were given a project as a university project, a complex application totally disjointed, which we had to analyze and understand to improve it later.
+        I was also able to put this skill into practice during my second-year internship and currently in the third year.`,
+        'skill2-text2': `I was able to put this skill into practice in almost all my development projects.
+        My internship at ECOSM is just an example of a trace in which I was able to use a library. During this internship, I was able to use the FFMPEG library,
+        it is a very well-known library, used in very many applications such as, for example, "OBS Studio". It allows you to manipulate images, videos, or even audio.
+        It allowed me to retrieve all the scene changes of a video X, in order to be able to store them in binary files.`,
+        'skill6-text1': `I do not have projects on this portfolio to illustrate this skill, nevertheless I was able to participate in an informational monitoring
+        at the end of the "PPP" course, we had to make posts on a forum about current topics related to computer science.`,
+        'skill6-text2': `I do not have projects on this portfolio to illustrate this skill, nevertheless I carried out, during my third year of BUT Computer Science, a seminar
+        on business creation, in which we had to do everything necessary to create a company from a product that we had to invent.
+        It was therefore necessary to identify the challenges of the economy and digital innovation. Our team was ranked fifth among 19 teams.`,
+        'skill6-text3': `I do not have projects on this portfolio to illustrate this skill but I am currently in an internship, and I am lucky to be able to practice this skill.
+        I am currently helping the company I work for to change and evolve its technologies.`,
 
         /*
         ------------- Projet Symfony ---------------------
